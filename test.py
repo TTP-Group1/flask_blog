@@ -13,7 +13,7 @@ def test1():
 
 def test2():
     """A dummy docstring"""
-    response = app.test_client().get("/edit")
+    response = app.test_client().get("/register")
     assert response.status_code == 200
     
 
