@@ -1,4 +1,4 @@
-from puppycompanyblog import db,login_manager
+from puppycompanyblog import db,login_manager, admin
 from datetime import datetime
 from werkzeug.security import generate_password_hash,check_password_hash
 from flask_login import UserMixin
@@ -9,6 +9,9 @@ from flask_login import UserMixin
 # is_anonymous()
 # get_id()
 
+#My edit
+from flask_admin.contrib.sqla import ModelView
+#end of my edit
 
 # The user_loader decorator allows flask-login to load the current user
 # and grab their id.
@@ -42,6 +45,8 @@ class User(db.Model, UserMixin):
     def __repr__(self):
         return f"UserName: {self.username}"
 
+
+
 class BlogPost(db.Model):
     # Setup the relationship to the User table
     users = db.relationship(User)
@@ -62,3 +67,6 @@ class BlogPost(db.Model):
 
     def __repr__(self):
         return f"Post Id: {self.id} --- Date: {self.date} --- Title: {self.title}"
+
+admin.add_view(ModelView(BlogPost,db.session))
+admin.add_view(ModelView(User,db.session))
