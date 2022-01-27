@@ -1,12 +1,19 @@
 /* Register page CSS by stephania applying Anwar Jahid template */
+
+.container{
+    height:60vh;
+    width:100vw;
+    display:grid;
+    place-items:center;
+    padding-top:30px;
+}
+
 form{
     font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
     position:absolute;
-    top: 15%;
-    left:35%;
     padding:35px;
-    height:15rem;
     width:30rem;
+    height: 20rem;
     background:black;
     color:#fff;
     display:grid;
@@ -14,6 +21,7 @@ form{
 }
 
 .btn{
+    margin-top: 25px;
     background:#e50914; 
     color:white;
 }
