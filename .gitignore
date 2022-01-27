@@ -7,6 +7,9 @@
 ._*
 .Spotlight-V100
 .Trashes
+._.DS_Store
+**/.DS_Store
+**/._.DS_Store
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
