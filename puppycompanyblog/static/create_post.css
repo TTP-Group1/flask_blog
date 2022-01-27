@@ -1,31 +1,30 @@
-/* Register page CSS done by Anwar Jahid */
-form{
+.form-group1 {
     font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
-    position:absolute;
-    top: 15%;
-    left:35%;
     padding:35px;
-    height:35rem;
-    width:30rem;
-    background:black;
+    background:rgba(51, 51, 51, 0.803);
     color:#fff;
     display:grid;
     grid-template-columns: 1fr;
 }
 
-.btn{
+.btn-outline-info {
     background:#e50914; 
     color:white;
+    text-align: center;
+    margin: auto;
+    border:none;
 }
 
-.btn:hover {
-    background: #ff6b6b;
+.btn-outline-info:hover {
+    background:#dd9497; 
 }
-.text{
+
+.form-control-lg {
     background:rgba(87, 87, 87, 0.899);
     padding:5px;
     color:white;
 }
+
 
 @media (max-width:800px){
     form{
@@ -33,4 +32,3 @@ form{
         transition: 1s ease-out;
     }
 }
-

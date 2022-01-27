@@ -1,11 +1,11 @@
-/* Register page CSS done by Anwar Jahid */
+/* Register page CSS by stephania applying Anwar Jahid template */
 form{
     font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
     position:absolute;
     top: 15%;
     left:35%;
     padding:35px;
-    height:35rem;
+    height:15rem;
     width:30rem;
     background:black;
     color:#fff;
@@ -21,7 +21,7 @@ form{
 .btn:hover {
     background: #ff6b6b;
 }
-.text{
+.log{
     background:rgba(87, 87, 87, 0.899);
     padding:5px;
     color:white;
@@ -33,4 +33,3 @@ form{
         transition: 1s ease-out;
     }
 }
-
