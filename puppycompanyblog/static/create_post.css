@@ -12,6 +12,7 @@
     color:white;
     text-align: center;
     margin: auto;
+    border:none;
 }
 
 .btn-outline-info:hover {
