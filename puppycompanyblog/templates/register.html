@@ -1,12 +1,13 @@
 {% extends "base.html" %}
 {% block content %}
-<form method="POST">
+<link type="text/css"  rel="stylesheet" href="{{ url_for('static', filename='/register.css') }}"/>
+<form method="POST" class="form">
     {# This hidden_tag is a CSRF security feature. #}
     {{ form.hidden_tag() }}
-    {{ form.email.label }} {{ form.email() }}<br>
-    {{ form.username.label }} {{ form.username() }}<br>
-    {{ form.password.label }} {{ form.password() }}<br>
-    {{ form.pass_confirm.label }} {{ form.pass_confirm() }}<br>
-    {{ form.submit() }}
+    {{ form.email.label }} {{ form.email(class="text") }}<br>
+    {{ form.username.label }} {{ form.username(class="text") }}<br>
+    {{ form.password.label }} {{ form.password(class="text") }}<br>
+    {{ form.pass_confirm.label }} {{ form.pass_confirm(class="text") }}<br>
+    {{ form.submit(class="btn") }}
 </form>
 {% endblock %}
