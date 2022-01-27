@@ -4,7 +4,12 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from flask_login import LoginManager
 
+'''
+'''
+from flask_admin import Admin
 
+'''
+'''
 app = Flask(__name__)
 
 #############################################################################
@@ -29,6 +34,13 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 Migrate(app,db)
 
+###########################
+#### MYEDIT #######
+#########################
+
+admin = Admin(app)
+
+#end of edit
 
 ###########################
 #### LOGIN CONFIGS #######
