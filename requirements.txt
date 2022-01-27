@@ -13,3 +13,4 @@ Flask-WTF
 Pillow
 SQLAlchemy
 SQLAlchemy-Utils
+pytest
