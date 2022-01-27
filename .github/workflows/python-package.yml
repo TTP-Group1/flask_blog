@@ -29,9 +29,12 @@ jobs:
           pytest test.py
       - name: Checking docker installation
         run: docker run hello-world
-#      - name: Push to docker Hub
-#        uses: docker/build-push-action@v2
-#        with:
-#          login: ${{ secrets.DOCKER_USERNAME }}
-#          password: ${{ secrets.DOCKER_PASSWORD }}
-#          repository: ilanrod/todo_app
+      - name: Push to docker Hub
+        uses: docker/build-push-action@v2
+        with:
+          login: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+          repository: ilanrod/flaskblog
+      - name: Pull from docker Hub
+        run: |
+          docker run -it ilanrod/flaskblog
