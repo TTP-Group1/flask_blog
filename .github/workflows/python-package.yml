@@ -39,4 +39,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ilanrod/flaskblog:latest
+          tags: 456819/flask_blog
