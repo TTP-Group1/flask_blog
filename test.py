@@ -18,18 +18,6 @@ def test2():
     
       
 def test3():
-    """Testing Home page """
-    response = app.test_client().get("/")
-    assert b"Puppy Company Blog" in response.data
-    assert b"test" in response.data
-    assert b"brand new title" in response.data
-    assert b"my first six blog post" in response.data
-    assert b"my test post" in response.data
-    assert b"three title" in response.data
-    assert b"asdf" in response.data
-    assert b"Read Blog Post" in response.data
-    
-def test4():
     """Testing register page"""
     response = app.test_client().get("/register")
     assert b"Email" in response.data
@@ -37,16 +25,34 @@ def test4():
     assert b"Password" in response.data
     assert b"Confirm password" in response.data
     assert b"Register!" in response.data
-    
-def test5():
+
+
+def test4():
     """Testing Log In page"""
     response = app.test_client().get("/login")
     assert b"Email" in response.data
     assert b"Password" in response.data
-    assert b"Log In!" in response.data
+    
     
 def test5():
-    """Testing info section """
+    """Testing About us section """
     response = app.test_client().get("/info")
-    assert b"Info about our Company" in response.data
-  
+    assert b"Welcome to Team 1" in response.data
+    assert b"Copyright 2022 CUNY TTP - Winter 22 Bootcamp. All Rights Reserved." in response.data
+    
+def test6():
+    """Testing Home section """
+    response = app.test_client().get("/")
+    assert b"Movies Review Blog" in response.data
+    
+    
+    
+
+
+    
+
+    
+    
+
+    
+
