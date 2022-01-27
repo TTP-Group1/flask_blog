@@ -10,7 +10,7 @@ jobs:
   build:
     strategy:
       matrix:
-        platform: [ubuntu-latest]
+        platform: [ubuntu-latest, windows-latest]
         python-version: ["3.7", "3.8", "3.9", "3.10"]
 
     runs-on: ${{ matrix.platform }}
@@ -37,9 +37,10 @@ jobs:
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
-      - name: Push to DockerHub
-        uses: docker/build-push-action@v2
-        with:
-          context: .
-          push: true
-          tags: 456819/flask_blog
+          repository: 456819/flask_blog
+#       - name: Push to DockerHub
+#         uses: docker/build-push-action@v2
+#         with:
+#           context: .
+#           push: true
+#           tags: 456819/flask_blog
