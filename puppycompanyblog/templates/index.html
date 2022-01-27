@@ -20,9 +20,14 @@
         <p id="publish-home" >Published on: {{ post.date.strftime('%Y-%m-%d') }}</p>
         <p class="card-text">{{ post.text[:100] }}...</p>
         <a href="{{ url_for('blog_posts.blog_post', blog_post_id=post.id) }}" class="btn btn-primary">Read Blog Post</a>
+        <img src="{{url_for('static', filename='profile_pics/spiderman3.jpg')}}" align="middle" />
+<<<<<<< HEAD
+      
+=======
+>>>>>>> 34ad01b2d5992eb39ba8f08b95398fb0deaf6e2e
       </div>
     </div>
-
+    
    {% endfor %}
 
    <nav aria-label="Page navigation example">
