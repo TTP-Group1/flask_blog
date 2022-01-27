@@ -54,6 +54,20 @@ p {
     font-size: 17px;  
 }
 
-#info{
-    color: white;  
+
+#post{
+    background:rgba(51, 51, 51, 0.803);
+    color: white; 
+}
+
+#title1{
+    color: #e50914;
+}
+
+#title2{
+    color: white; 
+}
+
+.text{
+    padding: 30px;
 }
