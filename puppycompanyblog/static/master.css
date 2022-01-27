@@ -1,3 +1,6 @@
 body {
-    background-color: black;
+    background-image: linear-gradient(rgba(120, 110, 110, 0.7),
+    rgba(14, 13, 13, 0.7)), url(../static/profile_pics/background.jpg);
+    background-attachment: fixed;
+    background-size: cover;  
 }
