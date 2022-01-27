@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-
+<link type="text/css"  rel="stylesheet" href="{{ url_for('static', filename='/register.css') }}"/>
 <div class="jumbotron">
   <div align='center'>
     <h1 >Welcome to the page for {{current_user.username}}</h1>
