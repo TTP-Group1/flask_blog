@@ -20,6 +20,6 @@ python -m pip install pytest
 
 # Usage
 ```
-$ flask app.py
+$ python app.py
 ```
 If you get any errors, it might be because you are missing a dependency.
