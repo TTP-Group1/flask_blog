@@ -1,0 +1,33 @@
+.form-group1 {
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    padding:35px;
+    background:rgba(51, 51, 51, 0.803);
+    color:#fff;
+    display:grid;
+    grid-template-columns: 1fr;
+}
+
+.btn-outline-info {
+    background:#e50914; 
+    color:white;
+    text-align: center;
+    margin: auto;
+}
+
+.btn-outline-info:hover {
+    background:#dd9497; 
+}
+
+.form-control-lg {
+    background:rgba(87, 87, 87, 0.899);
+    padding:5px;
+    color:white;
+}
+
+
+@media (max-width:800px){
+    form{
+        left:25%;
+        transition: 1s ease-out;
+    }
+}
