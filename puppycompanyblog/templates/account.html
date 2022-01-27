@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-<link type="text/css"  rel="stylesheet" href="{{ url_for('static', filename='/register.css') }}"/>
+<link type="text/css"  rel="stylesheet" href="{{ url_for('static', filename='/account.css') }}"/>
 <div class="jumbotron">
   <div align='center'>
     <h1 >Welcome to the page for {{current_user.username}}</h1>
@@ -8,23 +8,27 @@
     <p>{{ current_user.email }}</p>
   </div>
 </div>
+
+
 <div class="container">
   <form  method="POST" action = "" enctype="multipart/form-data">
     {{ form.hidden_tag() }}
-    <div class="form-group">
-      {{ form.username.label(class="form-group") }}
-      {{form.username(class='form-control')  }}
-    </div
-    <div class="form-group">
-      {{ form.email.label(class="form-group") }}
-      {{form.email(class='form-control')  }}
-    </div>
-    <div class="form-group">
-      {{ form.picture.label(class="form-group") }}
-      {{ form.picture(class="form-control-file") }}
-    </div>
-    <div class="form-group">
-        {{ form.submit(class="btn btn-primary") }}
+    <div class="formgroup1">
+      <div class="form-group">
+        {{ form.username.label(class="form-group") }}
+        {{form.username(class='form-control')  }}
+      </div>
+      <div class="form-group">
+        {{ form.email.label(class="form-group") }}
+        {{form.email(class='form-control')  }}
+      </div>
+      <div class="form-group">
+        {{ form.picture.label(class="form-group") }}
+        {{ form.picture(class="form-control-file") }}
+      </div>
+      <div class="form-group">
+          {{ form.submit(class="btn btn-primary") }}
+      </div>
     </div>
   </form>
 
