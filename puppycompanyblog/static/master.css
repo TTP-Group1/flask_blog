@@ -13,7 +13,7 @@ h1 {
     background:rgba(51, 51, 51, 0.803);
 }
 
-/* p {
+p {
     color: white;
 }
 
@@ -29,5 +29,31 @@ h1 {
 
 .card-title {
     color: #e50914;
-} */
+}
 
+.jumbotron{
+    background:rgba(51, 51, 51, 0.803);
+    color:white;
+}
+
+#author{
+    font-size: 17px;
+}
+
+#publish{
+    font-size: 17px;
+}
+
+#auther-home{
+    color:white;
+    font-size: 17px;  
+}
+
+#publish-home{
+    color: white;
+    font-size: 17px;  
+}
+
+#info{
+    color: white;  
+}
