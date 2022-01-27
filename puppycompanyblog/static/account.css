@@ -1,0 +1,26 @@
+.formgroup1 {
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    padding:35px;
+    background:rgba(51, 51, 51, 0.803);
+    color:#fff;
+}
+
+.btn-primary {
+    background:#e50914; 
+    color:white;
+    text-align: center;
+    margin: auto;
+    border:none;
+}
+
+.btn-primary:hover {
+    background:#dd9497; 
+}
+
+
+@media (max-width:800px){
+    form{
+        left:25%;
+        transition: 1s ease-out;
+    }
+}
